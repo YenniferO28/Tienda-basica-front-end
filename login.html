@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASTER DIGITAL</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,300;1,700&family=Pixelify+Sans:wght@400;700&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/registro.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/main-logo-white-transparent.png" alt="logo">
+        </a>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="computadores.html">Computadores</a>
+        <a class="navegacion__enlace" href="tarjetas.html">Tarjetas Graficas</a>
+        <a class="navegacion__enlace" href="accesorios.html">Accesorios</a>
+        <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+        <a class="navegacion__enlace  navegacion__enlace--activo" href="login.html">Login/Registro</a>
+
+    </nav>
+    <main >
+        <main>
+            <!--========================================
+           contenido
+        ==========================================-->
+    
+        <div class="contenedor-login">
+    
+    
+            <!--========================================
+                Formularios
+            ==========================================-->
+            <div class="contenedor-texto">
+    
+                <div class="contenedor-form">
+    
+                    <h1 class="titulo">¡Para mas Informacion Acá!</h1>
+    
+                    <!-- Tabs -->
+                    <ul class="tabs-links">
+                        <li class="tab-link active">Registrate</li>
+                    </ul>
+    
+                 
+                     <!--========================================
+                        Formulario de Registro
+                    ==========================================-->
+                    <form action="" method="POST" id="formRegistro" class="formulario active ">
+    
+                        <div class="error-text ">
+                            
+                        </div>
+    
+                        <input type="text" placeholder="Nombre y Apellidos" class="input-text" name="nombre" autocomplete="off"> 
+                        <input type="text" placeholder="Correo electrónico" class="input-text" name="correo" autocomplete="off"> 
+    
+                        <div class="grupo-input">
+    
+                            <input type="password" placeholder="Contraseña" name="password" class="input-text clave">
+                            <button type="button" class="icono fas fa-eye mostrarClave"></button>
+                            
+                        </div>
+    
+                        <!-- Checkbox Personalizados -->
+                        <label class="contenedor-cbx animate">
+                            Me gustaría recibir notificaciones sobre productos
+                            <input type="checkbox" name="cbx_notificaciones" checked>
+                            <span class="cbx-marca"></span>
+                        </label>
+    
+                         <label class="contenedor-cbx animate">
+                            He leído y acepto los
+                            <a href="#" class="link">Términos y Condiciones</a>
+                            <a href="#" class="link">y Política de privacidad de mi Tienda</a>
+    
+                            <input type="checkbox" name="cbx_terminos" >
+                            <span class="cbx-marca"></span>
+    
+                        </label>
+    
+                        <button class="btn" id="btnRegistro" type="button">Crear Cuenta</button>
+    
+                    </form>
+    
+    
+                </div>
+    
+            </div>
+    
+        </div>
+       
+        <!--========================================
+           Mis Scripts
+        ==========================================-->
+        </main>
+    
+    
+
+    </main>
+    <footer class="footer">
+        <p class="footer__texto">MASTER DIGITAL -- Todos los derechos reverdados
+            <br>Yennifer S Ortega O
+        </p>
+    </footer>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASTER DIGITAL</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,300;1,700&family=Pixelify+Sans:wght@400;700&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/carrito.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/main-logo-white-transparent.png" alt="logo">
+        </a>
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-cart"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                    />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
+
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Zapatos Nike</p>
+                            <span class="precio-producto-carrito">$80</span>
+                        </div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="icon-close"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18L18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cart-total hidden">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$200</span>
+                </div>
+                <p class="cart-empty">El carrito está vacío</p>
+            </div>
+        </div>
+
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="computadores.html">Computadores</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="tarjetas.html">Tarjetas Graficas</a>
+        <a class="navegacion__enlace" href="accesorios.html">Accesorios</a>
+        <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+        <a class="navegacion__enlace" href="login.html">Login/Registro</a>
+
+    </nav>
+    <main class="contenedor">
+        <h1>Dual GeForce RTX 3060 V2 OC Edition</h1>
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/5.jpg" alt="imagen del producto">
+            <div class="camisa__contenido">
+                <p>•	Multiprocesadores NVIDIA Ampere Streaming: Los componentes 
+                    básicos de las GPU más rápidas y eficientes del mundo, el nuevo 
+                    Ampere SM ofrece el doble de rendimiento FP32 y una eficiencia energética mejorada. <br>
+                    •	RT Cores de 2a generación: Experimenta el doble de rendimiento
+                     que los núcleos RT de primera generación <br>
+                    •	Tensor Cores de 3a generación: Obtén hasta el doble de rendimiento 
+                    con escasez estructural. <br>
+                    •	Modo OC: Boost clock 1867 MHz (modo OC) / 1837 MHz (modo Gaming). <br>
+                    •	El diseño de ventilador de Axial-tech. <br>
+                    •	Un diseño de 2 ranuras maximiza la compatibilidad y la eficiencia de enfriamiento <br> 
+                    •	La tecnología 0dB te permite disfrutar de juegos ligeros en relativo silencio. <br>
+                    •	Un soporte de acero inoxidable es más duro y más resistente a la corrosión. <br>
+                    </p>
+                    <h2>Precio: $3.200.000</h2>
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option value="Talla" disabled selected>--Seleccionar Talla--</option>
+                        <option value="small">S</option>
+                        <option value="medium">M</option>
+                        <option value="large">L</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1" max="10">
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </form>
+               
+             </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <p class="footer__texto">MASTER DIGITAL -- Todos los derechos reverdados
+            <br>Yennifer S Ortega O
+        </p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
